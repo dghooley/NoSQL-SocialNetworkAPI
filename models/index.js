@@ -1,4 +1,4 @@
-const Network = require('./network');
-const Comment = require('./comment');
+const User = require('./user');
+const Thoughts = require('./thoughts');
 
-module.exports = { Network, Comment };
+module.exports = { User, Thoughts };

@@ -1,1 +1,0 @@
-const { Pizza } = require('../models');

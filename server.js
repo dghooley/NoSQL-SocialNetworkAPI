@@ -8,9 +8,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-app.use(require('./routes'));
+app.use(require('./controllers'));
 
-mongoose.connect(process.env.MONGO_URI || '', {
+mongoose.connect(process.env.MONGO_URI || 'monogdb://localhost:27017/social-network', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
