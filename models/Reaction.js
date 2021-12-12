@@ -1,3 +1,4 @@
+/*
 const { Schema, model, Types } = require('mongoose');
 // const dateFormat = require('../utils/dateFormat');
 const moment = require('moment');
@@ -34,3 +35,4 @@ const reactionSchema = new Schema({
 const Reaction = model('Reaction', reactionSchema);
 
 module.exports = reactionSchema;
+*/

@@ -1,8 +1,7 @@
-const { User } = require('../../models');
-
-// anything in here is gonna be /api/user
+const { User } = require('../models');
 
 const userController = {
+    
     getAllUsers(req, res) {
         User.find({})
             .then(dbUserData => res.json(dbUserData))
