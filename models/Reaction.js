@@ -1,6 +1,36 @@
 const { Schema, model, Types } = require('mongoose');
-const dateFormat = require('../utils/dateFormat');
+// const dateFormat = require('../utils/dateFormat');
+const moment = require('moment');
+// const { truncate } = require('fs');
 
-const Reaction = model('Reaction', ReactionSchema);
+const reactionSchema = new Schema({
+    reactionId: {
+        type: Types.ObjectId,
+        default: newTypes.ObjectId()
+    },
+    reactionBody: {
+        type: String,
+        required: true,
+        maxlength: 200
+    },
+    username: {
+        type: String,
+        required: true
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now,
+        get: (createdAtVal) => moment(createdAtVal).format('MMM DD, YYYY [at] hh:mm a')
+    }
+},
+{
+    toJSON: {
+        getters: true
+    },
+    id: false
+});
 
-module.exports = Reaction;
+
+// const Reaction = model('Reaction', ReactionSchema);
+
+module.exports = ReactionSchema;
