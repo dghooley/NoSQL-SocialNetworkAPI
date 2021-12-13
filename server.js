@@ -11,10 +11,9 @@ app.use(express.static('public'));
 
 app.use('/api', apiRoutes);
 
-mongoose.connect(process.env.MONGO_URI || 'monogdb://localhost:27017/social-network', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/nosql-socialnetworkapi', {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
-//    useFindAndModify: false
+    useUnifiedTopology: true
 });
 
 mongoose.set('debug', true);

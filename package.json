@@ -1,7 +1,7 @@
 {
   "name": "nosql-socialnetworkapi",
   "version": "1.0.0",
-  "description": "An API for social network web application ",
+  "description": "",
   "main": "server.js",
   "dependencies": {
     "express": "^4.17.1",
@@ -17,10 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/dghooley/NoSQL-SocialNetworkAPI.git"
   },
-  "keywords": [
-    "[]"
-  ],
-  "author": "\"\"",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dghooley/NoSQL-SocialNetworkAPI/issues"
