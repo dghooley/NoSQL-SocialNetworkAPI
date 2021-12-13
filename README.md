@@ -15,10 +15,11 @@ When the User enters the command to invoke the application, the server is starte
 
 ### Executing program
 
-* npm start
-* node server.js
 ```
-code blocks for commands
+npm start
+```
+```
+node server.js
 ```
 
 ## Screencastify 
